@@ -114,5 +114,65 @@
                 alt="imagen researchgate" width="39px">
         </a>
     </aside>
+    <footer>
+        <h2>Postula al curso</h2>
+        <form action="/action_page.php" method="get" autocomplete="on">
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido"><br><br>
+
+            <input type="text" placeholder="Celular" name="celular" required=""> <br>
+            <input type="text" placeholder="DNI" name="dni" required=""> <br>
+            <input type="text" placeholder="Edad" name="edad"> <br>
+            <input type="email" placeholder="Correo electrónico" name="correo" required=""> <br> <br>
+            <hr>    
+            <label for="">Nivel de educacion</label> <br>
+            <input type="radio" id="secundaria" name="educacion" value="Secundaria">
+            <label for="secundaria">Secundaria</label><br>
+            <input type="radio" id="universitario" name="educacion" value="Universitario" >
+            <label for="universitario">Universitario</label><br>
+            <input type="radio" id="doctorado" name="educacion" value="Doctorado">
+            <label for="doctorado">Doctorado</label><br><br>
+            <hr>
+            <label for="">Disponibilidad</label> <br>
+            <input type="checkbox" name="horario1" value="mañana">
+            <label for="horario1"> mañana </label><br>
+            <input type="checkbox" name="horario2" value="tarde">
+            <label for="horario2"> tarde </label><br>  
+            <input type="checkbox" name="horario3" value="noche">          
+            <label for="horario3"> noche </label><br><br>
+            <hr>
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+                <option value="peru">Perú</option>
+                <option value=" Argentina"> Argentina</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Surinam">Surinam</option>
+                <option value="TyT">Trinidad y Tobago</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="GuayanaFrancesa">Guayana Francesa</option>
+            </select>
+            <br><br>
+            <hr>
+            <label for="">Sube tu CV</label><br>
+            <input type="file"> <br><br>
+            <hr>
+            <label for="">Comentarios</label> <br>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <br>
+        
+            <input type="checkbox" name="politicas" id="politicas" checked="">
+            <label for="politicas">He leido y acepto las políticas de privacidad</label> <br>
+
+            <button class="btn btn-danger" type="submit" id="btnsubmit"><i class="fas fa-spinner fa-spin me-2" id="iconloading" style="display:none"></i>Enviar</button>
+
+        </form>
+    </footer>
 </body>
 </html>
